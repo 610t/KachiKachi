@@ -31,7 +31,7 @@ display = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c, addr=0x3C)
 
 while True:
      display.fill(0)
-     display.text(chr(c), 3, 0, True, font_name="font5x8.bin", size=10)
+     display.text(chr(c), 3, 0, True, font_name="font5x8.bin", size=8)
      display.show()
      position = encoder.position
      if position != last_position:
